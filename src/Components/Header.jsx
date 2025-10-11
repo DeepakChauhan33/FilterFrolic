@@ -5,8 +5,8 @@ import spImg from '../assets/postImg.png';
 const Header = () => {
     return (
         <>
-            <header className='h-[14%] md:h-[16%] flex justify-between px-5 items-center gap-5 border-b-[0.5px] border-gray-300 rounded-b-md p-2.5'>
-                <div className='w-20 h-22 md:h-30 md:w-40 bg-blue-200'>
+            <header className='h-[13%] md:h-[16%] flex justify-between px-5 items-center gap-5 border-b-[0.5px] border-gray-300 rounded-b-md p-2.5'>
+                <div className='w-17 h-18 md:h-30 md:w-40 bg-blue-200'>
                     <img
                         className='w-full h-full object-center'
                         src={logo_img}

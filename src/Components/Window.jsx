@@ -11,7 +11,7 @@ const Window = () => {
     return (
         <>
 
-            <section className='font-sans'>
+            <section className='font-sans space-y-1.5'>
 
                 {/* DELIVERY STATUS CARD */}
 
@@ -125,34 +125,66 @@ const Window = () => {
 
 
 
-                <div className='h-50 bg-amber-200'>
+                <div className='h-20 rounded-md shadow-2xl bg-gray-200 flex justify-between items-center  mt-3 p-3'>
 
-                    <p>
-                        see Article Deteils 
-                    </p>
-                    <button
-                        className='mt-4 bg-red-600 text-white px-4 py-2 rounded'
-                        onClick={() => setShowDetails(true)}
-                    >
-                        Close
-                    </button>
-                    
+                    <div>
+                        <p>
+                            see Article Deteils, Here...
+                        </p>
+                    </div>
+
+                    <div>
+                        <button
+                            className=' border-red-600 border-1 px-2 py-0.5 bg-red-200 rounded-md text-gray-500'
+                            onClick={() => setShowDetails(true)}
+                        >
+                            Details
+                        </button>
+                    </div>
+
 
                 </div>
 
                 {showDetails && (
-                    <div className='fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center z-50'>
-                        <div className='bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md'>
-                            <h2 className='text-lg font-semibold mb-2'>Delivery Details</h2>
-                            <p className='text-sm text-gray-700'>
-                                Your parcel could not be delivered. Please verify the address or contact support.
-                            </p>
-                            <button
-                                className='mt-4 bg-red-600 text-white px-4 py-2 rounded'
-                                onClick={() => setShowDetails(false)}
-                            >
-                                Close
-                            </button>
+                    <div className='fixed inset-0 bg-gray-900 bg-opacity-30 flex justify-center items-center z-50'>
+                        <div className='bg-white py-2 rounded-lg shadow-lg w-[90%] max-w-md'>
+                            <h2 className='text-lg font-semibold text-white mb-2 p-2 bg-[#e92e2e]'>Saved Articles</h2>
+
+                            
+
+                            
+                                <div className="max-h-60   overflow-y-auto border border-gray-300 rounded-md">
+                                    <table className="min-w-full table-auto">
+                                        <thead>
+                                            <tr className="border-t-2 border-red-400 bg-gray-200">
+                                                <th className="px-4 py-2 text-left">Article ID</th>
+                                                <th className="px-4 py-2 text-left">Article Type</th>
+                                                <th className="px-4 py-2 text-left">Charged Weight</th>
+                                                <th className="px-4 py-2 text-left">Sender Name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr className="text-gray-700">
+                                                <td className="px-4 py-2">ED756361018IN</td>
+                                                <td className="px-4 py-2">SP_INLAND_DOC</td>
+                                                <td className="px-4 py-2">300</td>
+                                                <td className="px-4 py-2">DEEPAK CHAUHAN</td>
+                                            </tr>
+                                            {/* Add more rows here */}
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div className='flex justify-center items-center'>
+                                    <button 
+                                    className='mt-4 bg-red-600 text-white px-4 py-2 rounded '
+                                    onClick={() => setShowDetails(false)}
+                                >
+                                    Close
+                                </button>
+                                </div>
+                                
+            
                         </div>
                     </div>
                 )}
