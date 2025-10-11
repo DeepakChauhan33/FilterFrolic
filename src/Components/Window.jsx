@@ -18,7 +18,7 @@ const Window = () => {
                 <div className='p-3 shadow-md rounded-lg mt-5 border-[0.5px] border-gray-300'>
                     <div className=' w-full flex justify-center items-center '>
 
-                        <div className='flex p-4 gap-4 items-center border-b-1'>
+                        <div className='flex p-4 gap-4 items-center space-x-5 border-b-1 w-full'>
 
 
                             <div className='flex flex-col gap-1'>
@@ -111,10 +111,12 @@ const Window = () => {
                                 Return Address:
                             </span>
 
-                            <p className='ml-3 mt-1'>
+                            <p className='ml-3 mt-1 text-gray-900 leading-5'>
                                 State : DELHI <br />
                                 District : SOUTH WEST DELHI <br />
-                                POST : Lorem ipsum dolor sit amet.
+                                POST : Indira Park B.O <br />
+                                Pincode : 110045 <br />
+                                SOUTH WEST DELHI, DELHI 
 
                             </p>
                         </div>
