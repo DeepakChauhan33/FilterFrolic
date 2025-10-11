@@ -10,12 +10,12 @@ function App() {
     <>
 
     <main className='h-100lvh w-full '>
-      <Header />
-      <div className='p-1.5'>
+
+  
         <Window />
-      </div>
+
       
-      <Footer/>
+
     </main>
       
 
